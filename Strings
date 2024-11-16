@@ -1,6 +1,6 @@
 class Main {
     public static void main(String[] args) {
-       
+       //frequency of a string
         int c=0;
         String str="repetative";
         System.out.println("string is "+str);
