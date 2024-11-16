@@ -1,0 +1,49 @@
+class Main {
+    public static void main(String[] args) {
+       
+        int c=0;
+        String str="repetative";
+        System.out.println("string is "+str);
+        for(int i=0;i<str.length();i++)
+        {
+            if(str.charAt(i)=='e')
+            {
+                c++;
+            }
+        }
+         System.out.println(c);
+         //palindrome
+          System.out.println("------ -------- ----------- ------");
+          String s="rotor";
+          String r="";
+          int index=s.length()-1;
+          for(int i=index;i>=0;i--)
+          {
+              r=r+s.charAt(i);
+          }
+          if(s.equals(r))
+          {
+              System.out.println("true");
+          }
+          else
+          {
+             System.out.println("false"); 
+          }
+          System.out.println("----- ------- -------- ------- ----");
+          //reversing a string
+           String z="dam";
+          String r1="";
+          int index1=z.length()-1;
+          for(int i=index1;i>=0;i--)
+          {
+              r1=r1+z.charAt(i);
+          }
+          System.out.println(r1);
+          System.out.println("----- ------- -------- ------- ----");
+          //length
+          String s1="java";
+          int index_1=s1.length();
+            System.out.println(index_1);
+          System.out.println("----- ------- -------- ------- ----");  
+    }
+    }
