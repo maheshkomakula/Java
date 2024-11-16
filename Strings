@@ -44,6 +44,20 @@ class Main {
           String s1="java";
           int index_1=s1.length();
             System.out.println(index_1);
-          System.out.println("----- ------- -------- ------- ----");  
+          System.out.println("----- ------- -------- ------- ----");
+         String date = "17-11-2005";
+        String[] months = {
+            "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+            "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
+        };
+        System.out.println(date);
+        String[] parts = date.split("-"); 
+        String day = parts[0];
+        String month = months[Integer.parseInt(parts[1]) - 1];
+        String year = parts[2];
+
+        String convertedDate = day + "-" + month + "-" + year;
+        System.out.println(convertedDate);
+          System.out.println("----- ------- -------- ------- ----");
     }
     }
