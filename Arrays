@@ -1,0 +1,55 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		int arr[]={55,60,77,20,100};
+		System.out.print("array is ");
+		//largest element in an array
+		for(int i=0;i<arr.length;i++){
+		System.out.println(arr[i]);
+		}
+		int max=arr[0];
+		for(int i=0;i<arr.length;i++){
+		    if(arr[i]>max){
+		        max=arr[i];
+		    }
+		}
+		System.out.println("largest array "+max);
+		//even count in an array
+		int c=0;
+		for(int i=0;i<arr.length;i++){
+		    if(arr[i]%2==0){
+		        c++;
+		    }
+		}
+		System.out.println("even count is "+c);
+		//sum and average of an array
+		int s=0;
+		float avg=0;
+		for(int i=0;i<arr.length;i++){
+		    s+=arr[i];
+		    avg=s/arr.length;
+		}
+		System.out.println("sum  is "+s+ " average is "+avg);
+		//frequency of an element
+		int f=0;
+		int target=100;
+		for(int i=0;i<arr.length;i++){
+		    if(target==arr[i])
+		    {
+		        f++;
+		    }
+		}
+			System.out.println("frequency count is "+f);
+			//negative numbers to zero
+			int arr_1[]={55,-60,77,-20,100};
+			System.out.println("modified array ");
+			for(int i=0;i<arr_1.length;i++){
+			    if(arr_1[i]<0){
+			        arr_1[i]*=0;
+			    }
+			    	System.out.println(arr_1[i]);
+			}
+	}
+	
+}
